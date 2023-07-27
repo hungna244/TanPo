@@ -2,7 +2,7 @@ function showFlowers() {
     let getNumber = document.getElementById("inputNumber").value;
     let number = parseInt(getNumber)
 
-    if (number < 10 || number >20 || number ==""){
+    if (number < 10 || number >20 || isNaN(number)) {
         document.getElementById("arlert").innerHTML = "Lỗi, Vui lòng nhập số trong khoảng từ 10 đến 20!!!"
         return
 
